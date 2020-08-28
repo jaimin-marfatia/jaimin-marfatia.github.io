@@ -22,6 +22,8 @@ h5,
 h6,
 strong {
     color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
 }
 
 p,
@@ -31,6 +33,16 @@ label,
 input,
 textarea {
     color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+ul {
+    list-style: none;
 }
 
 .s1 {
@@ -48,6 +60,23 @@ textarea {
 .main-container {
     width: 1200px;
     margin: 0 auto;
+}
+
+.greeting-wrapper {
+    display: grid;
+    border: 2px dashed lightcoral;
+    min-height: 10em;
+    text-align: center;
+    align-content: center;
+}
+
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 1200px) {
